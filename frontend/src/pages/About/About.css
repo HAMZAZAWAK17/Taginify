@@ -1,0 +1,131 @@
+
+.about-section {
+  background-color: var(--moroccan-sand);
+  padding: 60px 20px;
+  font-family: 'Noto Sans Arabic', 'Open Sans', sans-serif;
+}
+
+.about-heading {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.about-heading h3 {
+  font-size: 42px;
+  color: var(--moroccan-terracotta);
+  font-weight: 700;
+  margin-bottom: 15px;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+}
+
+.about-heading p {
+  font-size: 20px;
+  color: var(--moroccan-indigo);
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.about-team {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.team-member {
+  background-color: white;
+  border-radius: 15px;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+  overflow: hidden;
+  transition: all 0.3s ease;
+  margin: 15px;
+  max-width: 350px;
+}
+
+.large-member {
+  max-width: 450px;
+}
+
+.member-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.member-photo-wrapper {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin: 0 auto 15px;
+  border: 4px solid var(--moroccan-gold);
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.team-photo {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.team-member:hover .team-photo {
+  transform: scale(1.1);
+}
+
+.member-details {
+  padding: 20px;
+  background-color: rgba(255,255,255,0.9);
+  width: 100%;
+}
+
+.team-name {
+  font-size: 24px;
+  color: var(--moroccan-terracotta);
+  margin-bottom: 5px;
+}
+
+.team-role {
+  font-size: 18px;
+  color: var(--moroccan-indigo);
+  display: block;
+  margin-bottom: 10px;
+}
+
+.team-description {
+  font-size: 16px;
+  color: #666;
+  line-height: 1.6;
+}
+
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  justify-items: center;
+  margin-top: 30px;
+}
+
+.featured-chef {
+  border: 3px solid var(--moroccan-gold);
+}
+
+@media (max-width: 1050px) {
+  .team-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 750px) {
+  .about-heading h3 {
+    font-size: 32px;
+  }
+  
+  .team-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .member-photo-wrapper {
+    height: 250px;
+  }
+}
